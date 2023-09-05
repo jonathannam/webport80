@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DASHBOARD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8; /* Màu nền nhạt hơn */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0056b3; /* Màu nền header sáng hơn */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: 2px solid #0056b3; /* Thêm khung viền và sửa màu nền */
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 5px; /* Bo góc nút */
+            transition: background-color 0.3s ease, border-color 0.3s ease; /* Hiệu ứng hover màu nền và khung viền */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Màu nền hover sáng hơn */
+            border-color: #004399; /* Màu khung viền hover sáng hơn */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DASHBOARD</h1>
+    </header>
+    <nav>
+        <a href="/search">Search</a>
+        <a href="/register">Register</a>
+        <a href="/TX_report">TX Report</a>
+        <a href="/CA_report">CA Report</a>
+    </nav>
+
+    <script>
+        function redirectToSearch() {
+            window.location.href = "/search";
+        }
+        function redirectToRegister(){
+            window.location.href = "/register";
+        }
+        function redirectToTXreport(){
+            window.location.href = "/TX_report";
+        }
+        function redirectToCAreport(){
+            window.location.href = "/CA_report";
+        }
+    </script>
+    <center>
+        <h4> Welcome to Naep demo</h4>
+    </center>
+</body>
+</html>
